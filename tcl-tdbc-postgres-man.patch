@@ -1,0 +1,20 @@
+--- tdbcpostgres1.0.4/Makefile.in.orig	2015-10-13 13:58:11.000000000 +0200
++++ tdbcpostgres1.0.4/Makefile.in	2016-03-09 20:38:51.691706841 +0100
+@@ -225,12 +225,11 @@
+ install-doc: doc
+ 	@$(INSTALL_DATA_DIR) $(DESTDIR)$(mandir)/mann
+ 	@echo "Installing documentation in $(DESTDIR)$(mandir)"
+-#   Not written yet!
+-#	@list='$(srcdir)/doc/*.n'; for i in $$list; do \
+-#	    echo "Installing $$i"; \
+-#	    rm -f $(DESTDIR)$(mandir)/mann/`basename $$i`; \
+-#	    $(INSTALL_DATA) $$i $(DESTDIR)$(mandir)/mann ; \
+-#	done
++	@list='$(srcdir)/doc/*.n'; for i in $$list; do \
++	    echo "Installing $$i"; \
++	    rm -f $(DESTDIR)$(mandir)/mann/`basename $$i`; \
++	    $(INSTALL_DATA) $$i $(DESTDIR)$(mandir)/mann ; \
++	done
+ 
+ test: binaries libraries
+ 	$(TCLSH) `@CYGPATH@ $(srcdir)/tests/all.tcl` $(TESTFLAGS) \
