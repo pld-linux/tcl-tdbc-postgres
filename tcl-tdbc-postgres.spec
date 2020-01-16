@@ -1,12 +1,12 @@
 Summary:	TDBC driver to access PostgreSQL databases
 Summary(pl.UTF-8):	Sterownik TDBC służący do dostępu do baz danych PostgreSQL
 Name:		tcl-tdbc-postgres
-Version:	1.1.0
+Version:	1.1.1
 Release:	1
 License:	Tcl (BSD-like)
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/tcl/tdbcpostgres%{version}.tar.gz
-# Source0-md5:	3a5e4e3007f0804a6205fe1ee978f2af
+# Source0-md5:	01c4cac9f75b8a8d70609cd3b5c0a115
 URL:		http://tdbc.tcl.tk/
 BuildRequires:	tcl-devel >= 8.6
 BuildRequires:	tcl-tdbc-devel >= %{version}
